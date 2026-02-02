@@ -24,8 +24,9 @@
 Формат вывода	JSON
 Поддерживаемые площадки	Wildberries, Ozon, Яндекс.Маркет, Amazon
 Категории товаров	Бытовая техника, электроника
+
 🎪 Структура промпта
-markdown
+
 [Системная часть]
 ROLE: {role}
 TASK: {task}
@@ -133,39 +134,7 @@ yaml
   ✓ Ключевые слова интегрированы органично
   ✓ Структура описания соответствует best practices Amazon
 
-📁 Файловая структура в репозитории
-text
-prompts-library/
-├── ecommerce/
-│   ├── product-card-copywriter-v1.md  # Эта карточка
-│   ├── templates/
-│   │   ├── base-template.md
-│   │   ├── wildberries-specific.md
-│   │   └── amazon-specific.md
-│   └── examples/
-│       ├── input-example.json
-│       └── output-example.json
-├── tests/
-│   └── test-cases.yaml
-└── README.md
 
-🔧 Настройка и использование
-Клонируйте репозиторий
-
-Используйте переменные из раздела "Пример входа"
-
-Запустите через API выбранной модели:
-
-python
-import openai
-
-response = openai.ChatCompletion.create(
-    model="gpt-4",
-    messages=[
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_prompt}
-    ]
-)
 📈 Метрики качества
 Accuracy: Соответствие предоставленным данным
 
