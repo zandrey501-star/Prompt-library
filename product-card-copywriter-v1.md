@@ -156,30 +156,10 @@ yaml
   ✓ В description акцент на имеющихся характеристиках
   ✓ В notes указаны недостающие данные
   ✓ Нет выдуманных функций
-Тест-кейс 3: Специфичные требования площадки
-Цель: Проверка адаптации под особые требования
-
-yaml
-Вход:
-  brand: "Apple"
-  model: "AirPods Pro 2"
-  platform: "Amazon"
-  specs: {"тип": "наушники", "шумоподавление": "активное", "зарядка": "MagSafe"}
-  features: ["Adaptive Audio", "Personalized Volume"]
-  requirements: {
-    "title_template": "Brand + Model + Key Feature - [Product ID]",
-    "max_title_length": 200,
-    "keywords": ["wireless", "noise cancelling", "bluetooth"]
-  }
-
-Ожидаемый результат:
-  ✓ Заголовок соответствует шаблону Amazon
-  ✓ Длина заголовка в пределах 200 символов
-  ✓ Ключевые слова интегрированы органично
-  ✓ Структура описания соответствует best practices Amazon
-
+  
 
 📈 Метрики качества
+
 Accuracy: Соответствие предоставленным данным
 
 Compliance: Следование требованиям площадки
